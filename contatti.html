@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="contatti NeriTech SpA" />
+    <meta name="keywords" content="NeriTech, contattio NeriTech, indirizzo NeriTech" />
+    <meta name="author" content="Bascelli Mattia" />
+    <meta name="robots" content="index, follow" />
+    <meta name="referrer" content="referrer" />
+    <link href="stile.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="img/logo_NT_icona.ico">
+
+    <title>Contatti NeriTech SpA</title>
+
+    <style>
+        form {
+            text-align: center;
+        }
+
+            form label {
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            form input, form select {
+                width: 45%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            form button {
+                background-color: #2E84B2;
+                color: #fff;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            form textarea{
+                width:45%;
+                height:60px;
+               
+            }
+
+        .main2 {
+            text-align: center;
+            margin: 10px 10px 10px 10px;
+            padding: 10px;
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            color: #010101;
+        }
+
+            .main2 ul {
+                list-style: square;
+            }
+
+            .main2 h2 {
+                text-align: center;
+                color: #2E84B2;
+                animation: animate 1.5s linear infinite;
+            }
+        .main2 a {
+            margin: 0;
+            text-decoration: none;
+        }
+
+            .main2 a:link {
+                color: #2E84B2;
+            }
+
+            .main2 a:visited {
+                color: #656565;
+            }
+
+            .main2 a:hover {
+                background-color: #2E84B2;
+                color: #fff;
+            }
+
+            .main2 a:active {
+                color: #656565;
+            }
+    </style>
+
+</head>
+<body>
+    <!--Header e Nav-->
+    <header>
+        <img src="img/logo_NT_piccolo.png" alt="logo NeriTEch SpA" />
+    </header>
+    <div class="topnav">
+        <a  href="index.html">Home</a>
+        <a href="catalogo.html">Catalogo</a>
+        <a href="gestoriTelefonici.html">Gestori Telefonici</a>
+        <a href="Assistenza.html">Assistenza</a>
+        <a href="Servizi.html">Servizi</a>
+        <a  href="chiSiamo.html">Chi siamo</a>
+        <div class="topnav-right">
+            <a class="active" href="#search">Contatti</a>
+            <a href="team.html">Team</a>
+        </div>
+    </div>
+    <!--Qui Inserire il vostro codice HTML-->
+
+    <section class="main2">
+        <h3>CONTATTI</h3>
+        <p>
+            <strong>NeriTech S.p.A.</strong><br />
+            Via Delle Tecnologie 1,<br />
+            00100 Roma (RM)<br />
+            <strong>Tel.</strong> 0123/456789<br />
+            <strong>Whatsapp</strong> 3210/654987
+        </p>
+        <div class="neri">
+            <img src="img/mappa.webp" alt="mappa della sede" />
+        </div>
+        <p>La nostra bellissima sede su <a href="#">Google MAPS</a></p>
+        <form action="#" method="post">
+            <label for="name">Nome e Cognome</label>
+            <input type="text" id="nome" name="nome" required />
+            <label for="email">email</label>
+            <input type="email" id="email-insert" name="email-insert" required />
+            <label for="messaggio">Messaggio:</label>
+            <textarea id="messaggio" name="messaggio"  placeholder="Inserisci qui il tuo messaggio" required></textarea>
+            <br />
+            <button type="submit">Invia Messaggio</button>
+        </form>
+    </section>
+
+    <!--Footer + barra navigazione Social-->
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/fb_dw.jpg" />
+            <img class="immagine2" src="img/fb_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/inst_dw.jpg" />
+            <img class="immagine2" src="img/inst_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/teleg_dw.jpg" />
+            <img class="immagine2" src="img/teleg_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/whats_dw.jpg" />
+            <img class="immagine2" src="img/whats_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/yt_dw.jpg" />
+            <img class="immagine2" src="img/yt_up.jpg" />
+        </a>
+    </div>
+    <br />
+    <footer>
+        <p>&copy; 2024 NeriTech S.p.A. - Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>

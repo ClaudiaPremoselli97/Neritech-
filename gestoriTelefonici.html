@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homepage NeriTech SpA" />
+    <meta name="keywords" content="NeriTech, catalogo NeriTech, Servizi NeriTech, Offerte" />
+    <meta name="author" content="Claudia Premoselli" />
+    <meta name="robots" content="index, follow" />
+    <meta name="referrer" content="referrer" />
+    <link href="stile.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="img/logo_NT_icona.ico">
+    <style>
+
+        /* Sfondo Barra di Navigazione*/
+        body {
+            font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        header {
+            background-image: url(img/sfondo.jpg);
+            background-size: cover;
+            text-align: left;
+            padding 5px;
+            margin: 5px;
+        }
+
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+            /* Stile sui link ipertestuali */
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                /* hover dei link */
+                .topnav a:hover {
+                    background-color: #2E84B2;
+                    color: black;
+                }
+
+                /*  active/current dei link */
+                .topnav a.active {
+                    background-color: #45AFDB;
+                    color: white;
+                }
+
+        /* parte destra della navigazione */
+        .topnav-right {
+            float: right;
+        }
+        /* Main Homepage*/
+        .main {
+            text-align: left;
+            margin: 30px 30px 30px 30px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            color: #010101;
+        }
+
+        /* footer */
+        footer {
+            margin-bottom: 0px;
+            color: #fff;
+            text-align: left;
+            background: #333;
+            padding: 10px;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+
+            .logo img {
+                height: 100px;
+                width: 170px;
+                margin: 25px;
+            }
+
+        h3 {
+            margin-left: 50px;
+        }
+
+        h2 {
+            color: #2E84B2;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+
+        .row {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-items: center;
+            gap: 10px;
+        }
+
+        #wind {
+            height: 40px;
+            width: 70px;
+            margin: 10px 0 5px 10px;
+        }
+
+        #vodafone {
+            height: 40px;
+            width: 70px;
+            margin: 10px 0 5px 10px;
+        }
+
+        #tim {
+            height: 40px;
+            width: 70px;
+            margin: 10px 0 5px 10px;
+        }
+
+        .promo {
+            display: flex;
+        }
+
+
+        .contenitori {
+            background-color: rgba(101, 101, 101, 0.3);
+            margin: 10px;
+            padding: 5px;
+            border-radius: 40px;
+            width: 80%;
+            text-align: center;
+            min-width: 200px;
+        }
+
+            .contenitori input {
+                background-color: whitesmoke;
+                height: 50px;
+                width: 200px;
+                border-radius: 15px;
+                border: none;
+                font-size: 16px;
+                margin: 10px;
+                font-weight: bold;
+            }
+
+        @media screen and (max-width: 850px) {
+            .row {
+                grid-template-columns: auto;
+            }
+        }
+    </style>
+
+
+
+    <title>Gestori Telefonici</title>
+
+</head>
+<body>
+    <header>
+        <img src="img/logo_NT_piccolo.png" />
+    </header>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="catalogo.html">Catalogo</a>
+        <a class="active" href="gestoriTelefonici.html">Gestori Telefonici</a>
+        <a href="Assistenza.html">Assistenza</a>
+        <a href="Servizi.html">Servizi</a>
+        <a href="chiSiamo.html">Chi siamo</a>
+        <div class="topnav-right">
+            <div class="topnav-right">
+                <a href="contatti.html">Contatti</a>
+                <a href="team.html">Team</a>
+                </div>
+        </div>
+    </div>
+
+    <!--Elenco gestori telefonici-->
+    <section>
+        <h2>I nostri partner telefonici</h2>
+
+        <div class="logo">
+            <img src="img/logo_wind.png" alt="questo è il logo della vodafone" />
+            <img src="img/logo_vodafone.png" alt="questo è il logo della wind" />
+            <img src="img/logo_tim.png" alt="questo è il logo della tim" />
+        </div>
+    </section>
+
+    <!--Contenitori per ogni singola promozione-->
+    <h3>Le promozioni in corso:</h3>
+    <section class="promo">
+        <div class="row">
+            <div class="contenitori">
+                <img id="wind" src="img/logo_wind.png" alt="questo è il logo della wind" />
+                <h4>Offerta voce e Internet</h4>
+                <p>Sei gia cliente wind? <br /> Attiva una nuova sim, con portabilità da altro operatore</p>
+                <h2>150GIGA</h2>
+                <h4>Minuti illimitati <br /> Sim e spedizione gratuita</h4>
+                <h2>10,99€ <br /> al mese </h2>
+                <h5>SENZA VINCOLI</h5>
+                <input class="attiva" type="button" value="ATTIVA" />
+            </div>
+
+            <div class="contenitori">
+                <img id="wind" src="img/logo_wind.png" alt="questo è il logo della wind" />
+                <h4>Offerta voce e Internet</h4>
+                <p>Riservato ai clienti Iliad,Fastweb, Coop Voce, Postemobile</p>
+                <h2>75GIGA</h2>
+                <h4>Minuti illimitati <br /> Sim e spedizione gratuita </h4>
+                <h2>7,99€ <br /> al mese </h2>
+                <h5>SENZA VINCOLI</h5>
+                <input class="attiva" type="button" value="ATTIVA" />
+
+            </div>
+            <div class="contenitori">
+                <img id="wind" src="img/logo_wind.png" alt="questo è il logo della wind" />
+                <h4>Internet</h4>
+                <h2>SuperFibra</h2>
+                <h4>Fibra fino a 2,5 Gigabit <br /> Modem Wi-Fi 6 Incluso <br /> Amazon Prime per 12 mesi</h4>
+                <h2>24,99€ <br /> al mese </h2>
+                <h5>SENZA VINCOLI</h5>
+                <input class="attiva" type="button" value="VERIFICA COPERTURA" />
+                <input class="attiva" type="button" value="CHIAMA" />
+
+            </div>
+
+            <div class="contenitori">
+                <img id="vodafone" src="img/logo_vodafone.png" alt="questo è il logo della vodafone" />
+                <h4>Voce e Internet</h4>
+                <p>Riservato ai clienti Iliad,Fastweb, Coop Voce, Postemobile</p>
+                <h4>Giga illimitati <br /> Minuti illimitati <br /> Sim e spedizione gratuita</h4>
+
+                <h2>10,99€ <br />al mese </h2>
+                <input class="attiva" type="button" value="ATTIVA" />
+
+            </div>
+
+            <div class="contenitori">
+                <img id="vodafone" src="img/logo_vodafone.png" alt="questo è il logo della vodafone" />
+                <h4>Voce e Internet</h4>
+                <p>Sei gia cliente vodafone?</p>
+                <h4>Giga Illimitati <br /> Minuti illimitati <br />Sim e spedizione gratuita</h4>
+                <h2>15,99€ <br /> al mese </h2>
+                <input class="attiva" type="button" value="ATTIVA" />
+
+            </div>
+
+            <div class="contenitori">
+                <img id="vodafone" src="img/logo_vodafone.png" alt="questo è il logo della vodafone" />
+                <h4>Internet</h4>
+                <h2>Internet Unlimited</h2>
+                <h4>Costo di attivazione iniziale 39,90€ <br /> 19,95€ se attivi online</h4>
+                <h2>24,90€ <br /> al mese </h2>
+                <input class="attiva" type="button" value="VERIFICA COPERTURA" />
+                <input class="attiva" type="button" value="CHIAMA" />
+
+            </div>
+
+
+            <div class="contenitori">
+                <img id="tim" src="img/logo_tim.png" alt="questo è il logo della tim" />
+
+                <h4>Voce e Internet</h4>
+                <h4>Se hai Tim a casa</h4>
+                <h2>Giga e minuti <br /> illimitati</h2>
+                <h4>Navigazione sicura <br /> 5G</h4>
+                <h2>14,99€ <br /> al mese </h2>
+
+                <input class="attiva" type="button" value="ATTIVA" />
+
+            </div>
+
+            <div class="contenitori">
+                <img id="tim" src="img/logo_tim.png" alt="questo è il logo della tim" />
+                <h4>Offerta Internet a casa <br /> per nuovi clienti</h4>
+                <h2>Fibra fino a <br /> 2,5 Gbps</h2>
+                <h4>Contributo di attivazione gratuito</h4>
+                <h2>25,90€ <br />al mese </h2>
+                <input class="attiva" type="button" value="VERIFICA COPERTURA" />
+                <input class="attiva" type="button" value="CHIAMA" />
+
+            </div>
+
+            <div class="contenitori">
+                <img id="tim" src="img/logo_tim.png" alt="questo è il logo della tim" />
+                <h4>Offerta Internet a casa <br /> per i già clienti</h4>
+                <h2>Fibra fino a <br /> 2,5 Gbps</h2>
+                <h4>Zero costi di attivazione <br /> Navigazione sicura </h4>
+                <h2>24,90€ <br />al mese </h2>
+                <input class="attiva" type="button" value="VERIFICA COPERTURA" />
+                <input class="attiva" type="button" value="CHIAMA" />
+
+            </div>
+
+
+
+    </section>
+
+    <!--Footer + barra navigazione Social-->
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/fb_dw.jpg" />
+            <img class="immagine2" src="img/fb_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/inst_dw.jpg" />
+            <img class="immagine2" src="img/inst_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/teleg_dw.jpg" />
+            <img class="immagine2" src="img/teleg_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/whats_dw.jpg" />
+            <img class="immagine2" src="img/whats_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/yt_dw.jpg" />
+            <img class="immagine2" src="img/yt_up.jpg" />
+        </a>
+    </div>
+    <br />
+    <footer>
+        <p>&copy; 2024 NeriTech S.p.A. - Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>

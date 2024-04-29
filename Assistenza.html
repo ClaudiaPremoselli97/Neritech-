@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homepage NeriTech SpA" />
+    <meta name="keywords" content="NeriTech, catalogo NeriTech, Servizi NeriTech, Offerte" />
+    <meta name="author" content="Claudia Premoselli" />
+    <link href="stile.css" rel="stylesheet" type="text/css">
+    <meta name="robots" content="index, follow" />
+    <meta name="referrer" content="referrer" />
+
+    <link rel="icon" type="image/x-icon" href="img/logo_NT_icona.ico">
+
+    <title>Assitenza</title>
+
+    <style>
+
+
+
+
+        /*Titolo per i contenitori*/
+        h3 {
+            color: #2E84B2;
+            margin: 5px;
+        }
+
+        /*Contenitori tipo assistenza*/
+        .contenitori {
+            margin: 10px;
+            border-radius: 15px;
+            padding: 10px;
+            text-align: left;
+            font-size: 12px;
+            height: 160px;
+            width: 200px;
+            display: flex;
+        }
+        /*Icone contenitori tipo assistenza*/
+        #icon {
+            height: 45px;
+            width: 50px;
+            margin: 40px 20px 0px 4px;
+        }
+        /*Titolo contenitori*/
+        .contenitori h4 {
+            color: #2E84B2;
+            margin: 10px 0px 0px 10px;
+        }
+
+
+        .contenitori li {
+            margin: 50px -10px -50px -90px;
+        }
+
+
+
+        /*Opzioni*/
+        select {
+            height: 30px;
+            width: 70%;
+            border-radius: 15px;
+            color: lightslategrey;
+            max-width: 450px;
+        }
+
+
+        /*Input*/
+        input {
+            height: 30px;
+            width: 50px;
+            border-radius: 10px;
+            background: #2E84B2;
+            color: #fff;
+            border: none;
+            margin-bottom: 50px;
+            margin-left: 10px;
+            padding: 5px;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .opzione {
+            text-align: left;
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <img src="img/logo_NT_piccolo.png" />
+    </header>
+    <div class="topnav">
+        <a href="index.html"> Home </a>
+        <a href="catalogo.html"> Catalogo</a>
+        <a href="gestoriTelefonici.html"> Gestori telefonici</a>
+        <a class="active" href="#assistenza.html"> Assistenza</a>
+        <a href="Servizi.html"> Servizi</a>
+        <a href="chiSiamo.html"> Chi siamo</a>
+        <div class="topnav-right">
+            <a href="contatti.html"> Contatti</a>
+            <a href="team.html"> Team</a>
+        </div>
+    </div>
+
+    <!--Contenitori servizi assistenza-->
+    <h3> La lista dei nostri servizi di assistenza</h3>
+    <section class="assistenza">
+        <div class="row">
+            <div class="contenitori">
+                <img id="icon" src="img/cell.png" alt="questo è il logo di un telefono" />
+                <h4>Richiesta riparazioni</h4>
+                <ul>
+                    <li>Richiesta riparazione dispositivo</li>
+                    <li>Visualizza stato della riparazione</li>
+                </ul>
+
+            </div>
+
+            <div class="contenitori">
+                <img id="icon" src="img/scatola.png" alt="questo è il logo di una scatola" />
+                <h4> Richiesta reso</h4>
+                <ul>
+                    <li>Richiesta reso</li>
+                    <li>Visualizza stato del reso/rimborso</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!--Opzioni-->
+        <div class="opzione">
+            <h3> Come possiamo aiutarti?</h3>
+            <form>
+                <label for="type_of_assistance">
+
+                    <select>
+                        <option value="Select"> Seleziona un servizio di assistenza</option>
+                        <option value="Richiesta riparazione" name="riparazione_prodotto"> Richiesta di ripararazione prodotto</option>
+                        <option value="Visualizzazione stato riparazione" name="stato_di_riparazione"> Visualizzazione stato di ripararazione prodotto</option>
+                        <option value="Richiesta reso" name="reso"> Richiesta reso</option>
+                        <br />
+
+                        <input type="button" value="Invia" />
+                    </select>
+                </label>
+
+            </form>
+        </div>
+
+    </section>
+
+    <!--Footer + barra navigazione Social-->
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/fb_dw.jpg" />
+            <img class="immagine2" src="img/fb_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/inst_dw.jpg" />
+            <img class="immagine2" src="img/inst_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/teleg_dw.jpg" />
+            <img class="immagine2" src="img/teleg_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/whats_dw.jpg" />
+            <img class="immagine2" src="img/whats_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/yt_dw.jpg" />
+            <img class="immagine2" src="img/yt_up.jpg" />
+        </a>
+    </div>
+    <br />
+    <footer>
+        <p>&copy; 2024 NeriTech S.p.A. - Tutti i diritti riservati.</p>
+    </footer>
+
+
+
+
+
+
+</body>
+</html>

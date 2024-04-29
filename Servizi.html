@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homepage NeriTech SpA" />
+    <meta name="keywords" content="NeriTech, catalogo NeriTech, Servizi NeriTech, Offerte" />
+    <meta name="author" content="Giovanni De Marzo" />
+    <meta name="robots" content="index, follow" />
+    <meta name="referrer" content="referrer" />
+    <link href="stile.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="img/logo_NT_icona.ico">
+
+    <title>Servizi</title>
+    <style>
+        section  {
+            background: #2E84B2;
+            
+        }
+        p {
+            color: #2E84B2;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        h3 {
+            color: #010101;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            color: #010101;
+        }
+        p:hover{
+            color:white;
+        }
+        h1 {
+            color: #010101;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        table {
+            
+            color: #010101;
+            margin: 10px;
+            padding: 30px;
+            width:30%;
+            max-width:350px;
+            
+        }
+        label {
+            color: #010101;
+            margin: 10px;
+            padding: 5px;
+           
+            
+        }
+        
+        
+        .servizi img{
+            margin:20px;
+            border-radius:10px;
+        }
+        
+        
+       .servizi{
+           text-align:center;
+           
+
+       }
+        form {
+            text-align:center;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+            form input, form select {
+                width: 95%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            form button {
+                background-color: #2E84B2;
+                color:white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        ul#cek li {
+            float: left;
+            list-style: none;
+            padding: 0 2px;
+        }
+       
+
+        
+        
+
+        
+            
+       
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo_NT_piccolo.png" />
+    </header>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="catalogo.html">Catalogo</a>
+        <a href="gestoriTelefonici.html">Gestori Telefonici</a>
+        <a href="Assistenza.html">Assistenza</a>
+        <a class="active" href="#Servizi">Servizi</a>
+        <a href="chiSiamo.html">Chi siamo</a>
+        <div class="topnav-right">
+            <a href="contatti.html">Contatti</a>
+            <a href="team.html">Team</a>
+        </div>
+    </div>
+    <section class="main">
+        <h1>Servizi Offerti</h1>
+        <h3>Benvenuto qui ci sono tutti i servizi che proponiamo</h3>
+    </section>
+    <section class="main">
+        <h1>Applicazione pellicola protettiva</h1>
+        <div class="servizi">
+            <img src="img/pellicola.webp" alt="main" width="250" height="250" />
+        </div>
+        <p>
+            La pellicola adesiva, o film protettivo,
+            è un sottile strato di materiale che può essere applicato sui mobili o
+            altre superfici per cambiarne l'aspetto o per proteggerle dagli agenti esterni.
+        </p>
+
+    </section>
+    <section class="main">
+        <h1>Riparazioni in sede</h1>
+        <div class="servizi">
+            <img src="img/riparazione.webp" alt="main" width="250" height="250" />
+        </div>
+        <p>
+            IL TUO SMARTPHONE O TABLET È ROTTO?
+            Niente panico… c’è NeriTech!
+            NeriTech è la soluzione più efficace per la riparazione del tuo Smartphone o Tablet. Vieni a trovarci nei nostri store, oppure acquista online
+            la riparazione o il ricambio che ti serve.
+            Hai bisogno di un assistente esperto per il tuo smartphone o tablet, iPhone, Samsung, Nokia, HTC, Huawei e BlackBerry?
+            In questa sezione NeriTech propone una riparazione professionale garantita, eseguita da tecnici certificati.
+            Inoltre, offriamo tempi di lavorazione tra i più rapidi disponibili online.
+
+        </p>
+    </section>
+    <section class="main">
+        <h1>Estensioni di garanzia</h1>
+        <div class="servizi">
+            <img src="img/garanzia.webp" alt="main" width="250" height="250" />
+        </div>
+        <p>
+            Un'estensione di garanzia copre le conseguenze finanziarie dei guasti tecnici dovuti a difetti di materiale,
+            progettazione e fabbricazione anche dopo la scadenza della garanzia legale.
+            Per la maggior parte dei prodotti è sufficiente un'estensione di garanzia «Bring-in».ti esterni.
+        </p>
+    </section>
+    
+        <form action="#" method="get">
+            <label for="nomeCognome">Nome e Cognome:</label>
+            <input type="text" id="nomeCognome" name="nomeCognome" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <br>
+            <label for="checkin">Seleziona Servizio:</label>
+            <br />
+
+            <ul id="cek">
+                <li>
+
+                    <input type="checkbox" id="" name="Aplicazione pellicola " value="pellico" />
+                    <label for="pellicola">Aplicazione Pellicola</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="riparazione" name="riparazione" value="riparazione" />
+                    <label for="check2">Riparazione in Sede</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="Estensione Garanzia" name="Estensione Garanzia" value="EstensioneGaranzia" />
+                    <label for="check2">Estensione Garanzia</label>
+                </li>
+            </ul>
+            <br />
+            <br />
+            <br />
+            <label for="codice">Codice Sconto:</label>
+            <input type="text" id="codicesconto" name="codicesconto" />
+            <button type="submit"><strong>Seleziona il Servizio!</strong></button>
+    
+    </form>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/fb_dw.jpg" />
+            <img class="immagine2" src="img/fb_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/inst_dw.jpg" />
+            <img class="immagine2" src="img/inst_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/teleg_dw.jpg" />
+            <img class="immagine2" src="img/teleg_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/whats_dw.jpg" />
+            <img class="immagine2" src="img/whats_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/yt_dw.jpg" />
+            <img class="immagine2" src="img/yt_up.jpg" />
+        </a>
+    </div>
+    <br />
+    <footer>
+
+
+        <p>&copy; 2024 NeriTech S.p.A. - Tutti i diritti riservati.</p>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homepage NeriTech SpA" />
+    <meta name="keywords" content="NeriTech, catalogo NeriTech, Servizi NeriTech, Offerte" />
+    <meta name="author" content="Bascelli Mattia" />
+    <meta name="robots" content="index, follow" />
+    <meta name="referrer" content="referrer" />
+    <link href="stile.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="img/logo_NT_icona.ico">
+
+    <title>Homepage NeriTech SpA</title>
+    <style>
+        .row {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-items: center;
+            gap: 10px;
+        }
+
+        #wind {
+            height: 40px;
+            width: 70px;
+            margin: 10px 0 5px 10px;
+        }
+
+        #vodafone {
+            height: 40px;
+            width: 70px;
+            margin: 10px 0 5px 10px;
+        }
+
+        #tim {
+            height: 40px;
+            width: 70px;
+            margin: 10px 0 5px 10px;
+        }
+
+        #pc {
+            height: 155px;
+            width: auto;
+            margin: 10px 0 5px 10px;
+            border-radius: 10px;
+        }
+
+        .promo {
+            display: flex;
+        }
+
+        .contenitori {
+            background-color: rgba(101, 101, 101, 0.3);
+            margin: 10px;
+            padding: 5px;
+            border-radius: 10px 10px 0px 0px;
+            width: 80%;
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .contenitori2 {
+            background-color: #2E84B2;
+            color: white;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 0px 0px 10px 10px;
+            width: 80%;
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .contenitori h2 {
+            color: #2E84B2;
+        }
+
+        .contenitori2 h2 {
+            color: #fff;
+        }
+
+        .contenitori input {
+            background-color: whitesmoke;
+            height: 50px;
+            width: 200px;
+            border-radius: 15px;
+            border: none;
+            font-size: 16px;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .contenitori2 input {
+            background-color: whitesmoke;
+            height: 50px;
+            width: 200px;
+            border-radius: 15px;
+            border: none;
+            font-size: 16px;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 850px) {
+            .row {
+                grid-template-columns: auto;
+            }
+
+    </style>
+</head>
+<body>
+    <!--Header e Nav-->
+    <header>
+        <img src="img/logo_NT_piccolo.png" alt="logo NeriTEch SpA" />
+    </header>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="catalogo.html">Catalogo</a>
+        <a href="gestoriTelefonici.html">Gestori Telefonici</a>
+        <a href="Assistenza.html">Assistenza</a>
+        <a href="Servizi.html">Servizi</a>
+        <a href="chiSiamo.html">Chi siamo</a>
+        <div class="topnav-right">
+            <a href="contatti.html">Contatti</a>
+            <a href="team.html">Team</a>
+        </div>
+    </div>
+    <!--Qui Inserire il vostro codice HTML-->
+
+    <section class="main">
+        <h3>Benvenuto!</h3>
+        <p>Scopri i nostri <a href="servizi.html"><strong>servizi</strong></a> e le nostre <strong>offerte</strong>! Per qualsiasi dubbio non esitare a <a href="contatti.html"><strong>contattarci</strong></a>.</p>
+        <h2>OFFERTE DELLA SETTIMANA</h2>
+        <section class="promo">
+            <div class="row">
+                <div class="contenitori">
+                    <img id="wind" src="img/logo_wind.png" alt="questo è il logo della wind" />
+                    <h4>Offerta voce e Internet</h4>
+                    <p>Sei gia cliente wind? <br /> Attiva una nuova sim, con portabilità da altro operatore</p>
+                    <h2>150GIGA</h2>
+                    <h4>Minuti illimitati <br /> Sim e spedizione gratuita</h4>
+                    <h2>10,99€ <br /> al mese </h2>
+                    <h5>SENZA VINCOLI</h5>
+                    <input class="attiva" type="button" value="ATTIVA" />
+                </div>
+
+                <div class="row">
+                    <div class="contenitori2">
+                        <img id="pc" src="img/img_pc1.avif" alt="questo è il pc in offerta" />
+                        <h4>PC PORTATILE DA GAMING</h4>
+                        <p>Sei un GAMER accanito?<br />Scopri quanto è figo giocare con 60 fps fissi senza cali di framerate.</p>
+                        <h2>RATEIZZABILE</h2>
+                        <h4>PAYPAL 3RATE <br /> o fino a 12 rate con finaziamento.</h4>
+                        <h2>1999,00 €</h2>
+                        <h5>OFFERTA A TEMPO LIMITATO</h5>
+                        <input class="attiva" type="button" value="ACQUISTA" />
+                    </div>
+
+                    <div class="row">
+                        <div class="contenitori">
+                            <img id="wind" src="img/logo_wind.png" alt="questo è il logo della wind" />
+                            <h4>Offerta voce e Internet</h4>
+                            <p>Sei gia cliente wind? <br /> Attiva una nuova sim, con portabilità da altro operatore</p>
+                            <h2>GIGA ILLIMITATI</h2>
+                            <h4>Minuti illimitati <br /> Sim e spedizione gratuita</h4>
+                            <h2>19,99€ <br /> al mese </h2>
+                            <h5>SENZA VINCOLI</h5>
+                            <input class="attiva" type="button" value="ATTIVA" />
+                        </div>
+                     <div class="row">
+                         <div class="contenitori2">
+                             <img id="pc" src="img/img_pc3.webp" alt="questo è il pc in offerta" />
+                             <h4>PC PORTATILE PROFESSIONALE</h4>
+                             <p>Sei un lavoratore Professionista?<br />Prestazioni ottimali per Photoshop, Premiere ecc.</p>
+                             <h2>RATEIZZABILE</h2>
+                             <h4>PAYPAL 3RATE <br /> o fino a 12 rate con finaziamento.</h4>
+                             <h2>1299,00 €</h2>
+                             <h5>OFFERTA A TEMPO LIMITATO</h5>
+                             <input class="attiva" type="button" value="ACQUISTA" />
+                         </div>
+
+
+</section>
+
+
+
+
+
+        </section>
+
+    <!--Footer + barra navigazione Social-->
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/fb_dw.jpg" />
+            <img class="immagine2" src="img/fb_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/inst_dw.jpg" />
+            <img class="immagine2" src="img/inst_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/teleg_dw.jpg" />
+            <img class="immagine2" src="img/teleg_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/whats_dw.jpg" />
+            <img class="immagine2" src="img/whats_up.jpg" />
+        </a>
+    </div>
+    <div id="cambioimmagine">
+        <a href="#">
+            <img class="immagine1" src="img/yt_dw.jpg" />
+            <img class="immagine2" src="img/yt_up.jpg" />
+        </a>
+    </div>
+    <br />
+    <footer>
+        <p>&copy; 2024 NeriTech S.p.A. - Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
